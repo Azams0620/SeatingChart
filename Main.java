@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Main {
   public static void main(String[] args) {
     // Array of integers for seats
@@ -6,7 +8,11 @@ class Main {
     // Array of strings for student names
     String [] studentNames = new String[15];
 
-    
+    // For loop through studentNames Array
+    for(int i = 0; i <15; i++){
+      
+    }
+
 
 
   }
