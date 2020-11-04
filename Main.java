@@ -10,7 +10,11 @@ class Main {
 
     // For loop through studentNames Array
     for(int i = 0; i <15; i++){
-      
+      System.out.println("Please enter a student name: ");
+      Scanner scan = new Scanner(System.in);
+      String name = scan.next();
+      studentNames[i] = name;
+      System.out.print("Cool! " + name + " is in seat number " + seats[i] + "\n");
     }
 
 
