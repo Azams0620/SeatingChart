@@ -7,14 +7,29 @@ class Main {
 
     // Array of strings for student names
     String [] studentNames = new String[15];
+    Scanner scan = new Scanner(System.in);
 
     // For loop through studentNames Array
     for(int i = 0; i <15; i++){
       System.out.println("Please enter a student name: ");
-      Scanner scan = new Scanner(System.in);
-      String name = scan.next();
-      studentNames[i] = name;
-      System.out.print("Cool! " + name + " is in seat number " + seats[i] + "\n");
+      studentNames[i] = scan.next();
+    }
+
+
+    System.out.println("The students now have seats, here are the results: \n");
+    // While loop to print each name and seat pair
+    int counter = 0;
+    while(counter < 15){
+      if(counter % 2 == 0){
+        System.out.print(studentNames[counter] + " is in seat number " + seats[counter] + ", ");
+        counter++;
+      }
+      else{
+        System.out.println(studentNames[counter] + " is in seat number " + seats[counter] + "\n");
+      counter++;
+      }
+      
+       
     }
 
 
