@@ -9,7 +9,7 @@ class Main {
     // Array of strings for student names
     String [] studentNames = new String[15];
     Scanner scan = new Scanner(System.in);
-    
+
     // For loop through studentNames Array
     for(int i = 0; i <15; i++){
       System.out.println("Please enter a student name: ");
@@ -22,6 +22,7 @@ class Main {
     int counter = 0;
     while(counter < 15){
       //If statement for text formatting
+      //The if statement puts two pairs on each line
       if(counter % 2 == 0){
         System.out.print(studentNames[counter] + " is in seat number " + seats[counter] + ", ");
         counter++;
