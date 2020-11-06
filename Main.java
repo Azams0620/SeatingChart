@@ -20,6 +20,7 @@ class Main {
     // While loop to print each name and seat pair
     int counter = 0;
     while(counter < 15){
+      //If statement for text formatting
       if(counter % 2 == 0){
         System.out.print(studentNames[counter] + " is in seat number " + seats[counter] + ", ");
         counter++;
