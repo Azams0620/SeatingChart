@@ -27,6 +27,7 @@ class Main {
         System.out.print(studentNames[counter] + " is in seat number " + seats[counter] + ", ");
         counter++;
       }
+      //The else statemnt makes a new line for two more pairs
       else{
         System.out.println(studentNames[counter] + " is in seat number " + seats[counter] + "\n");
       counter++;
